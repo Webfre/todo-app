@@ -1,0 +1,379 @@
+.todo {
+  margin-top: 50px;
+  background: rgba(158, 110, 241, 0.795);
+  border-radius: 10px;
+  padding: 30px 25px;
+  margin-bottom: 30px;
+
+  &__form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+
+    @media screen and (max-width: 768px) {
+      margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 490px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  .from {
+    position: relative;
+    width: 100%;
+
+    input {
+      width: 85%;
+      padding: 15px 55px 15px 15px;
+      border-radius: 10px;
+      border: none;
+      background-color: rebeccapurple;
+      font-size: 14px;
+      font-weight: 600;
+      color: whitesmoke;
+      letter-spacing: 1.4px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+      &::placeholder {
+        color: whitesmoke;
+        font-size: 14px;
+        font-weight: 600;
+      }
+
+      &:focus {
+        outline: #fd3fc4d6 solid 1px;
+        -webkit-box-shadow: 4px 0px 48px -1px rgba(147, 35, 225, 0.34);
+        -moz-box-shadow: 4px 0px 48px -1px rgba(147, 35, 225, 0.34);
+        box-shadow: 4px 0px 48px -1px rgba(147, 35, 225, 0.34);
+      }
+    }
+  }
+
+  @media screen and (min-width: 1260px) {
+    .from {
+      input {
+        width: 90%;
+        padding: 20px 55px 20px 15px;
+        font-size: 18px;
+
+        &::placeholder {
+          color: whitesmoke;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .from {
+      input {
+        width: 87%;
+        padding: 12px;
+        font-size: 14px;
+
+        &::placeholder {
+          color: whitesmoke;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 15px 15px;
+  }
+
+  @media screen and (max-width: 490px) {
+    padding: 10px 7px 10px 7px;
+    margin-bottom: 14px;
+
+    .from {
+      input {
+        width: 80%;
+        padding: 12px 30px 12px 12px;
+        font-size: 12px;
+
+        &::placeholder {
+          color: whitesmoke;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.btn__add {
+  background: rebeccapurple;
+  border-radius: 10px;
+  border: none;
+  padding: 15px 35px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  scale: 1;
+  letter-spacing: 1.2px;
+
+  &:hover {
+    background: rgb(49, 26, 71);
+    scale: 0.98;
+    -webkit-box-shadow: 4px 0px 48px -1px rgba(147, 35, 225, 0.34);
+    -moz-box-shadow: 4px 0px 48px -1px rgba(147, 35, 225, 0.34);
+    box-shadow: 4px 0px 48px -1px rgba(147, 35, 225, 0.34);
+  }
+
+  @media screen and (min-width: 1260px) {
+    padding: 20px 35px;
+    font-size: 18px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 490px) {
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+}
+
+button:disabled,
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+
+  &:hover {
+    background-color: #cccccc;
+    color: #666666;
+    scale: 1;
+  }
+}
+
+.btn__reset {
+  position: absolute;
+  top: 5.8px;
+  height: 76%;
+  border: 0;
+  outline: none;
+  background-color: rgba(245, 240, 250, 0.125);
+  border-radius: 18px;
+  padding: 10px;
+  transform: translateX(-49px);
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: rgba(254, 254, 254, 0.905);
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 1260px) {
+    top: 12.8px;
+    height: 57%;
+  }
+
+  @media screen and (max-width: 768px) {
+    top: 7.8px;
+    height: 61%;
+    padding: 6px;
+    transform: translateX(-37px);
+  }
+
+  @media screen and (max-width: 490px) {
+    transform: translateX(-30px);
+  }
+}
+
+.icon {
+  color: rgba(243, 149, 255, 0.995);
+  font-size: 16px;
+  background: transparent;
+  cursor: pointer;
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+}
+
+.error {
+  font-size: 12px;
+  height: 15px;
+  font-weight: 600;
+  color: rgb(246, 255, 0);
+  margin-left: 5px;
+
+  @media screen and (max-width: 460px) {
+    font-size: 10px;
+    font-weight: 600;
+  }
+}
+
+/* ================ Filter ============== */
+
+.todo__filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+
+    label {
+      cursor: pointer;
+      input {
+        cursor: pointer;
+      }
+    }
+
+    @media screen and (min-width: 1260px) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 10px;
+    }
+
+    @media screen and (max-width: 490px) {
+      font-size: 8px;
+    }
+  }
+
+  @media screen and (min-width: 1260px) {
+    gap: 17px;
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: 7px;
+  }
+
+  @media screen and (max-width: 490px) {
+    gap: 4px;
+  }
+}
+
+.filter__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 16px;
+  font-weight: 600;
+
+  .green {
+    color: rgb(31, 255, 102);
+  }
+
+  .red {
+    color: rgb(255, 247, 3);
+  }
+
+  @media screen and (min-width: 1260px) {
+    gap: 18px;
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    gap: 8px;
+    font-size: 10px;
+  }
+
+  @media screen and (max-width: 490px) {
+    gap: 6px;
+    font-size: 8px;
+  }
+}
+
+/* для элемента input c type="radio" */
+.custom-radio > input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+/* для элемента label связанного с .custom-radio */
+.custom-radio > span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio > span::before {
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #fab5ef;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+
+  @media screen and (max-width: 768px) {
+    width: 10px;
+    height: 10px;
+  }
+
+  @media screen and (max-width: 490px) {
+    width: 7px;
+    height: 7px;
+  }
+}
+
+/* стили при наведении курсора на радио */
+.custom-radio > input:not(:disabled):not(:checked) + span:hover::before {
+  border-color: #b3d7ff;
+}
+
+/* стили для активной радиокнопки (при нажатии на неё) */
+.custom-radio > input:not(:disabled):active + span::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+/* стили для радиокнопки, находящейся в фокусе */
+.custom-radio > input:focus + span::before {
+  box-shadow: 0 0 0 0.2rem rgba(141, 2, 180, 0.64);
+
+  @media screen and (max-width: 490px) {
+    box-shadow: none;
+  }
+}
+
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.custom-radio > input:focus:not(:checked) + span::before {
+  border-color: #f080ff;
+}
+
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio > input:checked + span::before {
+  box-shadow: 0 0 0 0.2rem rgba(141, 2, 180, 0.64);
+  border-color: #9f0bef;
+  background-color: #d498ff;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+
+  @media screen and (max-width: 490px) {
+    box-shadow: 0 0 0 0.12rem rgba(141, 2, 180, 0.64);
+    border-color: #9f0bef;
+    background-color: #fd3fc4;
+    background-image: none;
+  }
+}
