@@ -8,7 +8,7 @@
 
 ## Предварительный просмотр
 
-<a href="https://webfre.github.io/words-play/todo-app" target="_blank">Перейти 👁</a>
+<a href="https://webfre.github.io/todo-app/" target="_blank">Перейти 👁</a>
 
 ## Технологии
 
