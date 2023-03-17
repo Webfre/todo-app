@@ -1,6 +1,6 @@
 # Список задач v2.0
 
-![Image alt](https://github.com/Webfre/words-play/blob/main/src/assets/words.png)
+![Image alt](https://github.com/Webfre/todo-app/blob/main/src/Image/2023-03-17_11-07-56.png)
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=webfre&label=Profile%20views&color=0e75b6&style=flat" alt="webfre" /> </p>
 
@@ -8,7 +8,7 @@
 
 ## Предварительный просмотр
 
-<a href="https://webfre.github.io/words-play/" target="_blank">Перейти 👁</a>
+<a href="https://webfre.github.io/words-play/todo-app" target="_blank">Перейти 👁</a>
 
 ## Технологии
 
@@ -31,7 +31,7 @@
 Для того, чтобы установить проект локально, Вам потребуется:
 
 ```sh
-git clone https://github.com/Webfre/words-play.git
+git clone https://github.com/Webfre/todo-app.git
 ```
 
 Запуск проекта:
