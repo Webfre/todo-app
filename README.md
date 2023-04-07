@@ -37,6 +37,7 @@ git clone https://github.com/Webfre/todo-app.git
 Запуск проекта:
 
 ```sh
+npm install
 cd my-app
 npm start
 ```
